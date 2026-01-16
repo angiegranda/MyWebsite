@@ -1,0 +1,17 @@
+html {
+    scroll-behavior: smooth; /*Applied to all anchors*/
+}
+
+body {
+    background-color: black;
+    color: rgb(177, 223, 150);
+    margin: 0px;
+    margin-top: 60px;
+    font-family:'Nunito', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    padding: 200px 2rem; 
+    scroll-margin-top: 50px;
+
+}
