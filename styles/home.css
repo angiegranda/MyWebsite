@@ -1,6 +1,6 @@
 .home-section {
     height: 100vh;
-    padding: 100px 32px;
+    padding: 60px 32px;
 } 
 
 .greeting, .role {
@@ -8,7 +8,7 @@
     justify-content: center;
     column-gap: 10px;
     font-size: 50px;
-
+    font-weight: bold;
 }
 
 @keyframes slideIn {
@@ -36,144 +36,58 @@
 
 .info {
     --y: 200px;
-    padding: 100px 100px;
+    padding: 50px 20%;
+    padding-bottom: 30px;
 }
 
-.brackets, .about {
+.brackets, .about, .skills {
     font-weight: bold;
+}
+
+.about, .brackets, .skills{
+    font-size: 22px;
+}
+
+.about {
+    padding-right: 15px;
 }
 
 .brackets {
     color: yellow;
 }
 
-.about {
+.about, .skills {
     color: rgb(169, 146, 231);
 }
 
 .about-me {
+    font-size: 20px;
     color: rgb(202, 226, 169);
+    padding-left: 25px;
+    text-align: justify;
 }
 
+.hello, .name, .role {
+    margin: 20px 20px;
+}
 
 .hello, .name, .role, .info {
-    margin: 20px 20px;
     animation: slideIn 2s ease forwards 0.5s;
 }
 
 strong {
-    color:  rgb(232, 250, 207);
+    color:  rgb(201, 238, 207);
 }
 
-
-
-
-/**/ 
-
-
-
-
-@media (max-width: 950px) {
-    .hello, .name, .role, .info {
-        margin: 0px;
-    }
-
-    .greeting, .role {
-        font-size: 25px;
-        column-gap: 7px;
-        font-weight: bold;
-    }
-    .info {
-        padding: 50px 50px;
-    }
-}
-
-
-
-/**/ 
-
-
-
-@media (max-width: 680px) {
-    .hello, .name, .role, .info {
-        margin: 0px;
-    }
-
-    .greeting, .role {
-        font-size: 25px;
-        column-gap: 7px;
-        font-weight: bold;
-    }
-    .info {
-        padding: 50px 50px;
-    }
-}
-
-
-
-/**/ 
-
-
-
-@media (max-width: 480px) {
-    .home-section {
-        padding: 30px 10px;
-    }
-
-    .hello, .name, .role, .info {
-        margin: 0px;
-    }
-
-    .greeting, .role {
-        font-size: 20px;
-        column-gap: 7px;
-        font-weight: bold;
-    }
-
-    .role {
-        margin-bottom: 30px;
-    }
-
-    .info {
-        padding: 10px 10px;
-    }
-}
-
-
-/**/ 
-
-
-
-@media (max-width: 350px) {
-    .home-section {
-        padding: 30px 10px;
-    }
-
-    .hello, .name, .role, .info {
-        margin: 0px;
-    }
-
-    .greeting, .role {
-        font-size: 18px;
-        column-gap: 7px;
-        font-weight: bold;
-    }
-
-    .role {
-        margin-bottom: 30px;
-    }
-
-    .info {
-        padding: 5px 5px;
-    }
-}
 
 
 /*Carousel settings*/
 
+
+
 .carousel-block {
-    width: 50%;      /* takes 50% of parent container */
-    margin: 0 auto;  /* centers horizontally */
+    width: 50%;     
+    margin: 0 auto; 
 }
 
 .carousel {
@@ -181,21 +95,24 @@ strong {
     overflow: hidden;
     background-color: black;
     padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .carousel-tech {
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     width: max-content;
     background-color: black;
 }
 
 .skill img {
-    height: 40px;
+    height: 50px;
     width: auto;
-    display: block;
     border-radius: 15px;;
 }
+
 
 @keyframes scroll-right {
     from {
@@ -207,9 +124,99 @@ strong {
 }
 
 .carousel-tech {
-    animation: scroll-right 20s linear infinite;
+    animation: scroll-right 15s linear infinite;
+    transition: animation-play-state 0.2s ease;
 }
 
-.carousel-track:hover {
+.carousel-tech:hover {
     animation-play-state: paused;
 }
+
+
+@media (max-width: 950px) {
+    .hello, .name, .role, .info {
+        margin: 0px;
+    }
+
+    .greeting, .role {
+        font-size: 40px;
+        column-gap: 7px;
+    }
+
+    .info {
+        padding: 50px 50px;
+    }
+
+    .carousel-block {
+        width: 60%;     
+    }
+}
+
+@media (max-width: 680px) {
+    .info {
+        padding: 50px 10%;
+        padding-bottom: 20px;
+    }
+
+    .carousel-block {
+        width: 80%;     
+    }
+}
+
+@media (max-width: 550px) {
+    .home-section {
+        padding: 30px 10px;
+    }
+
+    .greeting, .role {
+        font-size: 32px;
+    }
+    
+    .about-me {
+        font-size: 18px;
+    }
+
+    .role {
+        margin-bottom: 25px;
+    }
+
+    .info {
+        padding: 50px 10%;
+        padding-bottom: 20px;
+    }
+
+    .skills {
+        margin: 10px 0px;
+    }
+
+    .skill img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .greeting, .role {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .greeting, .role {
+        font-size: 22px;
+    }
+
+    .info {
+        padding: 5px 5px;
+    }
+
+    .skill img {
+        height: 30px;
+    }
+
+    .carousel-tech {
+        gap: 1rem;
+    }
+}
+
