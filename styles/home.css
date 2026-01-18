@@ -1,15 +1,37 @@
 .home-section {
     height: 100vh;
-    padding: 60px 32px;
+    padding: 30px 32px;  /*top-botton better to not have for smaller widths */
 } 
+
+.greeting-container {
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
 
 .greeting, .role {
     /* font-family:'Courier New', Courier, monospace; 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
     /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     font-size: 50px;
     font-weight: bold;
+}
+
+.greeting {
+    flex: 2;
+    padding-left: 50px;
+}
+
+.my-image  {
+    flex: 1;
+    opacity: 0;
+}
+
+.my-image img{
+    /* transform: scale(1.2);  implement for other widths*/
+    width: 80%;
 }
 
 @keyframes slideIn {
@@ -40,8 +62,7 @@
 
 .info {
     --y: 200px;
-    padding: 50px 20%;
-    padding-bottom: 30px;
+    padding: 0px 20%;
     opacity: 0;
 }
 
@@ -73,11 +94,15 @@
 }
 
 .hello, .name, .role {
-    margin: 20px 20px;
+    margin: 10px 10px;
 }
 
 strong {
     color:  rgb(201, 238, 207);
+}
+
+.skills {
+    margin: 10px 0px;
 }
 
 
@@ -95,7 +120,7 @@ strong {
 .carousel {
     width: 100%;
     overflow: hidden;
-    padding: 1rem 0;
+    padding: 0 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,8 +158,19 @@ strong {
 }
 
 
-.hello, .name, .role, .info, .carousel-block {
+.hello, .name, .role, .info, .carousel-block, .my-image{
     animation: slideIn 2s ease forwards 0.5s;
+}
+
+@media (max-width: 1440px) {
+    
+    .info {
+        padding: 0px 10%;
+    }
+
+    .my-image img {
+        transform: scale(1.2);
+    }
 }
 
 
@@ -148,18 +184,27 @@ strong {
         column-gap: 7px;
     }
 
-    .info {
-        padding: 50px 50px;
-    }
-
     .carousel-block {
         width: 60%;     
+    }
+
+    .my-image img {
+        transform: scale(1.5);
     }
 }
 
 @media (max-width: 680px) {
+
+    .greeting-container {
+        height: 40%;
+    }
+
+    .greeting {
+        padding-left: 15px;
+    }
+
     .info {
-        padding: 50px 10%;
+        padding: 0 5%;
         padding-bottom: 20px;
     }
 
@@ -169,6 +214,15 @@ strong {
 }
 
 @media (max-width: 550px) {
+
+    .greeting-container {
+        height: 30%;
+    }
+
+    .my-image img {
+        transform: scale(1.8);
+    }
+
     .home-section {
         padding: 30px 10px;
     }
@@ -186,8 +240,7 @@ strong {
     }
 
     .info {
-        padding: 50px 10%;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
     }
 
     .skills {
@@ -210,10 +263,6 @@ strong {
 @media (max-width: 350px) {
     .greeting, .role {
         font-size: 22px;
-    }
-
-    .info {
-        padding: 5px 5px;
     }
 
     .skill img {
