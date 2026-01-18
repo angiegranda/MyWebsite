@@ -253,9 +253,8 @@ strong {
     }
 
     .my-image img {
-        max-height: 200px;  /* 👈 controls “big but not insane” */
+        max-height: 250px;  /* 👈 controls “big but not insane” */
     }
-
 
 }
 
