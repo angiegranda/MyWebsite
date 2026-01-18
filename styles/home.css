@@ -168,9 +168,6 @@ strong {
         padding: 0px 10%;
     }
 
-    .my-image img {
-        transform: scale(1.2);
-    }
 }
 
 
@@ -188,9 +185,6 @@ strong {
         width: 60%;     
     }
 
-    .my-image img {
-        transform: scale(1.5);
-    }
 }
 
 @media (max-width: 680px) {
@@ -217,10 +211,6 @@ strong {
 
     .greeting-container {
         height: 30%;
-    }
-
-    .my-image img {
-        transform: scale(1.8);
     }
 
     .home-section {
