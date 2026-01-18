@@ -226,7 +226,9 @@ strong {
     }
 
     .my-image img {
-        max-height: 300px;  /* 👈 controls “big but not insane” */
+        max-height: 40vh;
+        width: auto;
+        object-fit: contain;
     }
 
     .role {
@@ -250,10 +252,6 @@ strong {
 
     .greeting, .role {
         font-size: 28px;
-    }
-
-    .my-image img {
-        max-height: 250px;  /* 👈 controls “big but not insane” */
     }
 
 }
