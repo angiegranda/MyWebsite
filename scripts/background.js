@@ -1,5 +1,26 @@
 /*Code from: https://github.com/crnacura/AmbientCanvasBackgrounds*/
 
+import { createNoise3D } from 'https://cdn.jsdelivr.net/npm/simplex-noise@4.0.3/dist/esm/simplex-noise.js';
+
+
+const TAU = Math.PI * 2;
+
+const rand = n => Math.random() * n;
+const randRange = n => n * (Math.random() - 0.5);
+
+const lerp = (a, b, t) => a + (b - a) * t;
+
+const fadeInOut = (life, ttl) => {
+  const half = ttl * 0.5;
+  return life < half
+    ? life / half
+    : 1 - (life - half) / half;
+};
+
+const cos = Math.cos;
+const sin = Math.sin;
+
+
 'use strict';
 
 const particleCount = 700;
@@ -44,12 +65,12 @@ function setup() {
 
 function initParticles() {
   tick = 0;
-  simplex = new SimplexNoise();
+
+  simplex = { noise3D: createNoise3D() };
+
   particleProps = new Float32Array(particlePropsLength);
 
-  let i;
-  
-  for (i = 0; i < particlePropsLength; i += particlePropCount) {
+  for (let i = 0; i < particlePropsLength; i += particlePropCount) {
     initParticle(i);
   }
 }
