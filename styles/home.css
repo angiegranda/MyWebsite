@@ -210,7 +210,8 @@ strong {
 @media (max-width: 550px) {
 
     .greeting-container {
-        height: 30%;
+        position: relative;   /* parent for absolute positioning */
+        height: auto;         /* let it grow to image */
     }
 
     .home-section {
@@ -223,12 +224,6 @@ strong {
     
     .about-me {
         font-size: 18px;
-    }
-
-    .my-image img {
-        max-height: 40vh;
-        width: auto;
-        object-fit: contain;
     }
 
     .role {
@@ -245,6 +240,30 @@ strong {
 
     .skill img {
         height: 40px;
+    }
+
+    .my-image {
+        flex: none;           /* remove flex effect */
+    }
+
+    .my-image img {
+        width: 100%;
+        max-height: 40vh;     /* keeps the image size you like */
+        display: block;
+    }
+
+    .greeting {
+        position: absolute;   /* overlay on top of image */
+        top: 50%;             /* vertically center text */
+        left: 50%;            /* horizontally center text */
+        transform: translate(-50%, -50%);
+        text-align: center;   /* center text */
+        color: white;         /* adjust for contrast */
+        width: 90%;           /* optional: limit width */
+    }
+
+    .greeting p {
+        text-shadow: 0 2px 6px rgba(0,0,0,0.6);
     }
 }
 
