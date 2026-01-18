@@ -2,7 +2,6 @@
 
 import { createNoise3D } from 'https://cdn.jsdelivr.net/npm/simplex-noise@4.0.3/dist/esm/simplex-noise.js';
 
-
 const TAU = Math.PI * 2;
 
 const rand = n => Math.random() * n;
