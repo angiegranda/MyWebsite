@@ -260,6 +260,7 @@ strong {
         text-align: center;   /* center text */
         color: white;         /* adjust for contrast */
         width: 90%;           /* optional: limit width */
+        z-index: 1000;
     }
 
     .greeting p {
