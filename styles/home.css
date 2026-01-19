@@ -260,11 +260,14 @@ strong {
         text-align: center;   /* center text */
         color: white;         /* adjust for contrast */
         width: 90%;           /* optional: limit width */
-        z-index: 1000;
     }
 
     .greeting p {
         text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    }
+
+    .greeting-container {
+        z-index: 1000;
     }
 }
 
