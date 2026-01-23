@@ -6,17 +6,22 @@ body {
     background-color: black;
     color: rgb(177, 223, 150);
     margin: 0px;
-    margin-top: 60px;
     font-family:'Nunito', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 section {
-    padding: 200px 2rem; 
-    scroll-margin-top: 50px;
+    padding: 50px 5rem; 
 }
 
 .content--canvas {
   position: fixed;
   inset: 0;
   z-index: -1;
+}
+
+
+@media (max-width: 950px) { 
+    section {
+        padding: 20px 2rem; 
+    }
 }
