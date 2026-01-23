@@ -52,6 +52,7 @@
                 <div class="carousel"> 
                     <p class="skills">Skills (Click me)</p>
                     <div class="carousel-tech">
+                        <!-- TODO: Add the projects so that this links will redirect to that specific project -->
                         <a class="skill" href="#"><img src="images/logos/csharp-logo.png"></a>
                         <a class="skill" href="#"><img src="images/logos/cpp-logo.png"></a>
                         <a class="skill" href="#"><img src="images/logos/java-logo.png"></a>
@@ -126,8 +127,32 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="section">
-            <p>Hello4</p>
+        <section id="contact" class="contact-section">
+            <form class="contact-me-box">
+                <label class="contact-property">
+                    <span class="contact-info-cat">Name:</span>
+                    <input class="contact-name-input" type="text" name="name" required>
+                </label>
+                <label class="contact-property">
+                    <span class="contact-info-cat">Email:</span>
+                    <input class="contact-email-input" type="email" name="email" required>
+                </label>
+                <label class="contact-property">
+                    <span class="contact-info-cat">Message:</span>
+                    <textarea class="contact-message-input"  type="message" required></textarea>
+                </label>
+                <div class="contact-button-container">
+                    <button class="contact-button" type="submit">Send</button>
+                </div>
+            </form>
+            <div class="contact-icons">
+                <a class="icon-container" href="link-here" target="_blank">
+                    <img class="contact-img" src="./images/logos/linkedin-logo.png">
+                </a>
+                <a class="icon-container" href="link-here" target="_blank">
+                    <img class="contact-img" src="./images/logos/github-logo.png">
+                </a>
+            </div>
         </section>
     </body>
 </html>
