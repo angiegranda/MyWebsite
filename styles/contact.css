@@ -1,0 +1,101 @@
+.contact-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;      /* centers form horizontally */
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+
+/* Contact Box*/
+
+
+.contact-me-box {
+    display: flex;
+    flex-direction: column;
+    column-gap: 15px;
+    justify-content: left;
+    align-content: center;
+    row-gap: 20px;
+    width: 50%;
+    padding: 150px auto;
+    padding-bottom: 100px;
+}
+
+.contact-property {
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+
+.contact-info-cat {
+    flex:1;
+    font-weight: bold;
+    color: rgb(169, 146, 231);
+    font-size: 22px;
+}
+
+.contact-name-input, 
+.contact-email-input, 
+.contact-message-input,
+.contact-button {
+    flex: 3;
+    background-color: transparent;
+    border: 2px solid rgba(247, 218, 141);
+    border-radius: 5px;
+    color: rgb(202, 226, 169); 
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 150px;
+    max-width: 100%;          
+    box-sizing: border-box;   
+    padding: 10px;
+    /*textarea */
+    resize: vertical;      
+}
+
+.contact-message-input {
+    height: 120px;      
+}
+
+.contact-name-input:active, 
+.contact-email-input:active, 
+.contact-message-input:active,
+.contact-button:active,
+.contact-name-input:hover, 
+.contact-email-input:hover, 
+.contact-message-input:hover,
+.contact-button:hover {
+    outline: none;
+}
+
+.contact-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-button {
+    max-width: 20%; 
+}
+
+/* Contact icons*/
+
+.contact-icons {
+    height:50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 20px;;
+}
+
+.icon-container {
+    background-color: red;
+}
+
+
+.contact-img {
+    height: 100%
+}

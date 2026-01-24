@@ -1,6 +1,5 @@
 .home-section {
     height: 100vh;
-    padding: 30px 32px;  /*top-botton better to not have for smaller widths */
 } 
 
 .greeting-container {
@@ -10,8 +9,6 @@
 }
 
 .greeting, .role {
-    /* font-family:'Courier New', Courier, monospace; 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif */
-    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,17 +18,18 @@
 
 .greeting {
     flex: 2;
-    padding-left: 50px;
+    padding-left: 150px;
 }
 
 .my-image  {
     flex: 1;
+    display: flex;
+    justify-content: center;
     opacity: 0;
 }
 
 .my-image img{
-    /* transform: scale(1.2);  implement for other widths*/
-    width: 80%;
+    width: 50%;
 }
 
 @keyframes slideIn {
@@ -168,6 +166,33 @@ strong {
         padding: 0px 10%;
     }
 
+    .greeting, .role {
+        font-size: 45px;
+    }
+
+    .greeting {
+        padding-left: 100px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .hello, .name, .role, .info {
+        margin: 0px;
+    }
+
+    .greeting {
+        padding-left: 50px;
+    }
+
+    .greeting, .role {
+        column-gap: 7px;
+    }
+
+    .carousel-block {
+        width: 60%;     
+    }
+
 }
 
 
@@ -177,12 +202,20 @@ strong {
     }
 
     .greeting, .role {
-        font-size: 40px;
+        font-size: 35px;
         column-gap: 7px;
+    }
+
+    .greeting {
+        padding-left: 50px;
     }
 
     .carousel-block {
         width: 60%;     
+    }
+
+    .my-image img {
+        width: 60%;
     }
 
 }
@@ -195,6 +228,19 @@ strong {
 
     .greeting {
         padding-left: 15px;
+        flex: 3;
+    }
+
+    .my-image {
+        flex: 1;
+    }
+
+    .greeting, .role {
+       font-size: 32px;
+    }
+
+    .my-image img {
+        width: 90%;
     }
 
     .info {
@@ -210,24 +256,15 @@ strong {
 @media (max-width: 550px) {
 
     .greeting-container {
-        position: relative;   /* parent for absolute positioning */
-        height: auto;         /* let it grow to image */
-    }
-
-    .home-section {
-        padding: 30px 10px;
+        height: 40%;
     }
 
     .greeting, .role {
-        font-size: 32px;
+        font-size: 30px;
     }
     
     .about-me {
         font-size: 18px;
-    }
-
-    .role {
-        margin-bottom: 25px;
     }
 
     .info {
@@ -240,34 +277,6 @@ strong {
 
     .skill img {
         height: 40px;
-    }
-
-    .my-image {
-        flex: none;           /* remove flex effect */
-    }
-
-    .my-image img {
-        width: 100%;
-        max-height: 40vh;     /* keeps the image size you like */
-        display: block;
-    }
-
-    .greeting {
-        position: absolute;   /* overlay on top of image */
-        top: 50%;             /* vertically center text */
-        left: 50%;            /* horizontally center text */
-        transform: translate(-50%, -50%);
-        text-align: center;   /* center text */
-        color: white;         /* adjust for contrast */
-        width: 90%;           /* optional: limit width */
-    }
-
-    .greeting p {
-        text-shadow: 0 2px 6px rgba(0,0,0,0.6);
-    }
-
-    .greeting-container {
-        z-index: 1000;
     }
 }
 
