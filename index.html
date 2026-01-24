@@ -129,17 +129,35 @@
         </section>
         <section id="contact" class="contact-section">
             <form class="contact-me-box">
-                <label class="contact-property">
-                    <span class="contact-info-cat">Name:</span>
-                    <input class="contact-name-input" type="text" name="name" required>
+                <label class="contact-property-container">
+                    <div class="contact-property">
+                        <div>
+                            <span class="contact-info-cat">Name:</span>
+                            <span class="brackets">{</span>
+                        </div>
+                        <input class="contact-name-input" type="text" name="name" required>
+                        <span class="brackets">}</span>
+                    </div>
                 </label>
-                <label class="contact-property">
-                    <span class="contact-info-cat">Email:</span>
-                    <input class="contact-email-input" type="email" name="email" required>
+                <label class="contact-property-container">
+                    <div class="contact-property">
+                        <div>
+                            <span class="contact-info-cat">Email:</span>
+                            <span class="brackets">{</span>
+                        </div>
+                        <input class="contact-email-input" type="email" name="email" required>
+                        <span class="brackets">}</span>
+                    </div>
                 </label>
-                <label class="contact-property">
-                    <span class="contact-info-cat">Message:</span>
-                    <textarea class="contact-message-input"  type="message" required></textarea>
+                <label class="contact-property-container">
+                    <div class="contact-property">
+                        <div>
+                            <span class="contact-info-cat">Message:</span>
+                            <span class="brackets">{</span>
+                        </div>
+                        <textarea class="contact-message-input"  type="message" required></textarea>
+                        <span class="brackets">}</span>
+                    </div>
                 </label>
                 <div class="contact-button-container">
                     <button class="contact-button" type="submit">Send</button>
@@ -147,10 +165,10 @@
             </form>
             <div class="contact-icons">
                 <a class="icon-container" href="link-here" target="_blank">
-                    <img class="contact-img" src="./images/logos/linkedin-logo.png">
+                    <img class="linkedin-logo" src="./images/logos/linkedin-logo.png">
                 </a>
                 <a class="icon-container" href="link-here" target="_blank">
-                    <img class="contact-img" src="./images/logos/github-logo.png">
+                    <img class="github-logo" src="./images/logos/github-logo.png">
                 </a>
             </div>
         </section>
