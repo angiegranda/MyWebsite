@@ -152,6 +152,9 @@ strong {
 }
 
 @media (max-width: 1440px) {
+    .carousel-block {
+        width: 60%;  
+    }
     
     .info {
         padding: 0px 10%;
@@ -168,6 +171,9 @@ strong {
 }
 
 @media (max-width: 1200px) {
+    .carousel-block {
+        width: 65%;  
+    }
     .hello, .name, .role, .info {
         margin: 0px;
     }
@@ -213,6 +219,10 @@ strong {
 
 @media (max-width: 680px) {
 
+    .carousel-block {
+        width: 70%;  
+    }
+
     .greeting-container {
         height: 40%;
     }
@@ -234,6 +244,10 @@ strong {
         width: 90%;
     }
 
+    .skill img  {
+        height: 40px;
+    }
+
     .info {
         padding: 0 5%;
         padding-bottom: 20px;
@@ -241,6 +255,10 @@ strong {
 
     .carousel-block {
         width: 80%;     
+    }
+
+    .carousel-tech {
+        gap: 1rem;
     }
 }
 
@@ -267,7 +285,7 @@ strong {
     }
 
     .skill img {
-        height: 40px;
+        height: 35px;
     }
 }
 
@@ -277,6 +295,10 @@ strong {
         font-size: 28px;
     }
 
+    .skill img {
+        height: 30px;
+    }
+
 }
 
 @media (max-width: 350px) {
@@ -284,12 +306,5 @@ strong {
         font-size: 22px;
     }
 
-    .skill img {
-        height: 30px;
-    }
-
-    .carousel-tech {
-        gap: 1rem;
-    }
 }
 
