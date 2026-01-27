@@ -99,10 +99,6 @@ strong {
     color:  rgb(201, 238, 207);
 }
 
-.skills {
-    margin: 10px 0px;
-}
-
 
 
 /*Carousel settings*/
@@ -112,51 +108,46 @@ strong {
 .carousel-block {
     width: 50%;     
     margin: 0 auto; 
-    opacity: 0;
+}
+
+.skills {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 10px;;
 }
 
 .carousel {
+    position: relative;
     width: 100%;
-    overflow: hidden;
-    padding: 0 0;
+    overflow: hidden; /* hide items going outside */
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-top: 10px;
 }
 
 .carousel-tech {
     display: flex;
     gap: 2.5rem;
     width: max-content;
+    position: relative; /* needed for absolute children */
+    height: 80px;       /* or whatever your images’ height is */
 }
 
 .skill img {
     height: 50px;
     width: auto;
-    border-radius: 15px;;
+    border-radius: 15px;
 }
 
 
-@keyframes scroll-right {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-50%);
-    }
-}
-
-.carousel-tech {
-    animation: scroll-right 15s linear infinite;
-    transition: animation-play-state 0.2s ease;
-}
-
-.carousel-tech:hover {
-    animation-play-state: paused;
+.skill.highlight img {
+    transform: scale(1.1);
+    border: 3px solid rgba(169, 146, 231, 0.5);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px 5px rgba(169, 146, 231, 0.5);;
 }
 
 
-.hello, .name, .role, .info, .carousel-block, .my-image{
+.hello, .name, .role, .info, .my-image{
     animation: slideIn 2s ease forwards 0.5s;
 }
 
@@ -255,6 +246,10 @@ strong {
 
 @media (max-width: 550px) {
 
+    .carousel-block {
+        width: 90%;     
+    }
+
     .greeting-container {
         height: 40%;
     }
@@ -263,16 +258,12 @@ strong {
         font-size: 30px;
     }
     
-    .about-me {
+    .about-me, .skills {
         font-size: 18px;
     }
 
     .info {
         padding-bottom: 10px;
-    }
-
-    .skills {
-        margin: 10px 0px;
     }
 
     .skill img {

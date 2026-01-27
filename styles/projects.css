@@ -89,10 +89,6 @@
         font-size: 13px;
     }
 
-    .tech-item{
-        height: 20px;
-    }
-
     .project-info-brackets {
         font-size: 13px;
     }
@@ -100,10 +96,6 @@
 }
 
 @media (max-width: 350px) {
-
-    .project-name {
-        font-size: 10px;
-    }
 
     .project-info-brackets {
         font-size: 12px;
