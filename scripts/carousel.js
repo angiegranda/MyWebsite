@@ -1,3 +1,11 @@
+//// TEST 
+
+
+
+////
+
+
+
 const container = document.querySelector(".carousel-tech"); 
 const skills = Array.from(container.querySelectorAll(".skill"));
 

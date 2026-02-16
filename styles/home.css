@@ -117,6 +117,7 @@ strong {
 }
 
 .carousel {
+    z-index: 10;
     position: relative;
     width: 100%;
     overflow: hidden; /* hide items going outside */

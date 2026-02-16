@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: rgb(21, 36, 25);
     color: rgb(177, 223, 150);
     margin: 0px;
     font-family:'Nunito', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -12,13 +12,6 @@ body {
 section {
     padding: 50px 5rem; 
 }
-
-.content--canvas {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-}
-
 
 @media (max-width: 950px) { 
     section {
