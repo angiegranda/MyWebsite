@@ -94,10 +94,10 @@
                     </article>
 
                     <article class="project-card">
-                        <div class="project-placeholder">
-                            <span class="project-placeholder-icon">&#128187;</span>
-                            <p>Screenshots coming soon</p>
-                        </div>
+                        <video class="project-video" width="100%" controls preload="metadata">
+                            <source src="./videos/shop-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                         <div class="project-info">
                             <a class="project-name" href="https://github.com/angiegranda/end-to-end-shop" target="_blank" rel="noopener">E-Commerce Website</a>
                             <div class="project-tech-list">
@@ -114,14 +114,13 @@
                 <article class="thesis-card">
                     <span class="thesis-tag">&#127891; Bachelor Thesis</span>
                     <h3 class="thesis-title">Interpretable Video Game Recommendation</h3>
-                    <p class="thesis-description">My bachelor's thesis at Charles University asks whether the black-box embeddings behind game recommenders can be made interpretable. I trained sparse autoencoders on two collaborative-filtering backbones (Modified ALS and ELSA) to decompose their embeddings into human-readable concepts &mdash; like &ldquo;roguelike&rdquo; or &ldquo;co-op&rdquo; &mdash; benchmarking 7 recommendation models and 4 autoencoder architectures across a full hyperparameter grid search on a large Steam dataset. The discovered concepts power a working web app where users can steer their own recommendations by tag.</p>
+                    <p class="thesis-description">My thesis investigates whether sparse autoencoders &mdash; an interpretability technique proven on large language models &mdash; can decompose a game recommender's item embeddings into human-interpretable, steerable concepts, and whether that depends on the SAE architecture or on the underlying embedding space. I built the full offline research pipeline in Python (PyTorch, scikit-learn, pandas, NumPy) on a large public Steam dataset under a chronologically realistic split, benchmarking 7 collaborative-filtering models (ALS, Modified ALS, ELSA, EASE, kNN) to select two structurally different embedding backbones, then designed 4 SAE architectures under a hard Top-K sparsity constraint across a full hyperparameter grid and ran offline steering experiments across 11,733 users. Key finding: interpretability depends far more on the backbone's embedding geometry than on the SAE architecture. The discovered concepts power a self-contained web app where users can steer their own recommendations by tag.</p>
 
                     <div class="thesis-media">
-                        <!-- EDIT: video will be embedded here once the file is added -->
-                        <div class="video-placeholder">
-                            <span class="video-placeholder-icon">&#9654;</span>
-                            <p>Thesis demo video coming soon</p>
-                        </div>
+                        <video class="thesis-video" width="100%" controls preload="metadata">
+                            <source src="./videos/thesis-demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
                     </div>
 
                     <div class="thesis-tech-list">
@@ -129,6 +128,7 @@
                         <span class="thesis-tech-badge">PyTorch</span>
                         <span class="thesis-tech-badge">scikit-learn</span>
                         <span class="thesis-tech-badge">pandas</span>
+                        <span class="thesis-tech-badge">NumPy</span>
                         <span class="thesis-tech-badge">Flask</span>
                     </div>
 
