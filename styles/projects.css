@@ -70,3 +70,23 @@
         width: 28px;
     }
 }
+
+/* No-media project card (e.g. no demo video available) */
+.project-placeholder {
+    border: 2px dashed var(--lavender);
+    border-radius: 14px;
+    background: var(--lavender-pale);
+    color: var(--lavender-deep);
+    font-weight: 700;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project-placeholder-icon {
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+}
