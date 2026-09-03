@@ -70,3 +70,24 @@
         width: 28px;
     }
 }
+
+.project-links {
+    margin-top: 1rem;
+}
+
+.project-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 0.55rem 1.2rem;
+    border-radius: 999px;
+    border: 2px solid var(--lavender-deep);
+    color: var(--lavender-deep);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.project-link:hover {
+    background-color: var(--lavender-deep);
+    color: var(--card);
+}
