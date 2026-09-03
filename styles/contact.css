@@ -1,5 +1,5 @@
 .contact-section {
-    max-width: 700px;
+    max-width: 520px;
     margin: 0 auto;
     text-align: center;
 }
@@ -8,98 +8,40 @@
     background: var(--card);
     border-radius: 24px;
     box-shadow: var(--shadow-soft);
-    padding: 2.5rem;
+    padding: 3rem 2.5rem;
 }
 
-.contact-me-box {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.25rem;
-}
-
-.contact-field {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.4rem;
-    text-align: left;
-}
-
-.contact-info-cat {
-    font-weight: 800;
-    color: var(--lavender-deep);
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-}
-
-.contact-input {
-    background-color: var(--cream);
-    border: 1.5px solid var(--border-soft);
-    border-radius: 10px;
-    color: var(--ink);
-    font-weight: 600;
-    font-size: 15px;
-    font-family: var(--font-body);
-    padding: 0.75rem 0.9rem;
-    width: 100%;
-    box-sizing: border-box;
-    transition: border-color 0.2s ease;
-}
-
-.contact-input:focus {
-    outline: none;
-    border-color: var(--lavender-deep);
-}
-
-.contact-message-input {
-    height: 130px;
-    resize: vertical;
-}
-
-.contact-button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 0.5rem;
-}
-
-.contact-button {
-    background: linear-gradient(90deg, var(--lavender-deep), var(--blush));
-    border: none;
-    color: #fff;
-    font-weight: 800;
-    font-size: 15px;
-    padding: 0.75rem 2.5rem;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.contact-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(142, 124, 195, 0.35);
+.contact-lead {
+    font-size: 18px;
+    color: var(--ink-soft);
+    margin: 0 0 2rem 0;
 }
 
 .contact-icons {
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
-    column-gap: 1.5rem;
+    gap: 1.25rem;
+    flex-wrap: wrap;
 }
 
 .icon-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
+    gap: 0.6rem;
     background: var(--lavender-deep);
-    transition: transform 0.2s ease, background-color 0.2s ease;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 15px;
+    padding: 0.85rem 1.75rem;
+    border-radius: 999px;
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .icon-container:hover {
-    transform: translateY(-3px) scale(1.08);
-    background: var(--blush);
+    transform: translateY(-3px);
+    background: #7c68b8;
+    box-shadow: 0 10px 20px rgba(142, 124, 195, 0.35);
 }
 
 .social-logo {
@@ -109,6 +51,15 @@
 
 @media (max-width: 680px) {
     .contact-wrapper {
-        padding: 1.75rem 1.25rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .contact-lead {
+        font-size: 16px;
+    }
+
+    .icon-container {
+        padding: 0.75rem 1.4rem;
+        font-size: 14px;
     }
 }
