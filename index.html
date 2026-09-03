@@ -3,143 +3,163 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Angie Granda | Software Developer</title>
+        <meta name="description" content="Angie Granda — Software Engineer portfolio: projects, thesis work, and contact.">
+        <title>Angie Granda | Software Engineer</title>
         <link rel="stylesheet" href="styles/general.css">
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/home.css">
         <link rel="stylesheet" href="styles/projects.css">
+        <link rel="stylesheet" href="styles/thesis.css">
         <link rel="stylesheet" href="styles/contact.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-        <script type="module" src="./scripts/carousel.js" defer></script>    
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Nunito:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <nav>
-                <a href="#home">
-                    <button class="nav-button">Home</button>
-                </a>
-                <a href="#projects">
-                    <button class="nav-button">Projects</button>
-                </a>
-                <a href="#contact">
-                    <button class="nav-button">Contact</button>
-                </a>
+                <a class="brand" href="#home">Angie Granda</a>
+                <div class="nav-links">
+                    <a href="#home"><button class="nav-button">Home</button></a>
+                    <a href="#projects"><button class="nav-button">Projects</button></a>
+                    <a href="#thesis"><button class="nav-button">Thesis</button></a>
+                    <a href="#contact"><button class="nav-button">Contact</button></a>
+                </div>
             </nav>
         </header>
-        <section id="home" class="home-section">
-            <div class="greeting-container">
-                <div class="greeting">
-                    <p class="hello">Hello,</p>
-                    <p class="name">I'm Angie Granda</p>
-                    <p class="role">I'm a Software Developer</p>
-                </div>
-                <div class="my-image">
-                    <img src="images/me.png">
-                </div>
-            </div>
-            <!-- TODO: role text change every 5 seconds with a different role from a given array -->
-            <div class="info">
-                <span class="about">About</span>
-                <span class="brackets">{</span>
-                <p class="about-me">I'm a soon-to-be <strong>Computer Science</strong> graduate from <strong>Charles University</strong> with a passion for building <strong>scalable and efficient software</strong> solutions. I specialize in Artificial Intelligence, with a focus on Machine Learning, and I’m eager to apply my skills to real-world problems.</p>
-                <span class="brackets">}</span>
-            </div>
-            <div class="carousel-block">
-                <p class="skills">Skills (Click me)</p>
-                <div class="carousel"> 
-                    <div class="carousel-tech">
-                        <!-- TODO: Add the projects so that this links will redirect to that specific project -->
-                        <a class="skill" href="#archivation-system"><img src="images/logos/csharp-svgrepo-com.svg"></a>
-                        <a class="skill" href="#tui-dir-jumper"><img src="images/logos/cpp-svgrepo-com.svg"></a>
-                        <a class="skill" href="#"><img src="images/logos/python-svgrepo-com.svg"></a>
-                        <a class="skill" href="#archivation-system"><img src="images/logos/html-5-svgrepo-com.svg"></a>
-                        <a class="skill" href="#archivation-system"><img src="images/logos/css-svgrepo-com.svg"></a>
-                        <a class="skill" href="#"><img src="images/logos/javascript-svgrepo-com.svg"></a>
-                        <a class="skill" href="#"><img src="images/logos/react-svgrepo-com.svg"></a>
-                        <a class="skill" href="#"><img src="images/logos/blazor-svgrepo-com.svg"></a>
+
+        <main>
+            <section id="home" class="home-section">
+                <div class="hero">
+                    <div class="hero-text">
+                        <p class="eyebrow">Hello, I'm</p>
+                        <h1 class="name">Angie Granda</h1>
+                        <p class="role">Software Engineer</p>
+                    </div>
+                    <div class="hero-photo">
+                        <img src="images/me.png" alt="Portrait of Angie Granda">
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="projects" class="section-projects">
-            <div id="archivation-system" class="project-wrapper">
-                <video width="93%" controls>
-                    <source src="./videos/ArchS-recording.mp4" type="video/mp4">
-                    Your browser does not support mp4
-                </video>
-                <div class="project-info">
-                    <a class="project-name" href="https://github.com/angiegranda/ArchSys" target="blank_">Semi-Automatic Archivation System</a>
-                    <span class="brackets">{</span>
-                    <div class="project-tech-list">
-                        <img class="tech-item" src="images/logos/csharp-svgrepo-com.svg">
-                        <img class="tech-item" src="images/logos/html-5-svgrepo-com.svg">
-                        <img class="tech-item" src="images/logos/css-svgrepo-com.svg">
-                        <img class="tech-item" src="images/logos/blazor-svgrepo-com.svg">
-                    </div>
-                    <span class="brackets">}</span>
+
+                <div class="about-card">
+                    <p class="section-label">About</p>
+                    <p class="about-me">I'm a soon-to-be <strong>Computer Science</strong> graduate from <strong>Charles University</strong> with a passion for building <strong>scalable and efficient software</strong> solutions. I specialize in Artificial Intelligence, with a focus on Machine Learning, and I'm eager to apply my skills to real-world problems.</p>
                 </div>
-            </div>
-            <div id="cpp" class="project-wrapper">
-                <video class="project-video" width="100%" controls>
-                    <source src="./videos/TUI-DirectoryJumperVideo.mp4" type="video/mp4">
-                    Your browser does not support mp4
-                </video>
-                <div class="project-info">
-                    <a class="project-name" href="https://github.com/angiegranda/TUI_Directory_Jumper-/tree/master/project" target="blank_">Terminal tool to change directory.</a>
-                    <span class="brackets project-info-brackets">{</span>
-                    <div class="project-tech-list">
-                        <img class="tech-item" src="images/logos/cpp-svgrepo-com.svg">
-                    </div>
-                    <span class="brackets project-info-brackets">}</span>
+
+                <div class="skills-block">
+                    <p class="section-label">Skills</p>
+                    <ul class="skills-grid">
+                        <li class="skill-badge"><img src="images/logos/csharp-svgrepo-com.svg" alt=""><span>C#</span></li>
+                        <li class="skill-badge"><img src="images/logos/cpp-svgrepo-com.svg" alt=""><span>C++</span></li>
+                        <li class="skill-badge"><img src="images/logos/python-svgrepo-com.svg" alt=""><span>Python</span></li>
+                        <li class="skill-badge"><img src="images/logos/html-5-svgrepo-com.svg" alt=""><span>HTML</span></li>
+                        <li class="skill-badge"><img src="images/logos/css-svgrepo-com.svg" alt=""><span>CSS</span></li>
+                        <li class="skill-badge"><img src="images/logos/javascript-svgrepo-com.svg" alt=""><span>JavaScript</span></li>
+                        <li class="skill-badge"><img src="images/logos/react-svgrepo-com.svg" alt=""><span>React</span></li>
+                        <li class="skill-badge"><img src="images/logos/blazor-svgrepo-com.svg" alt=""><span>Blazor</span></li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section id="contact" class="contact-section">
-            <form class="contact-me-box">
-                <label class="contact-property-container">
-                    <div class="contact-property">
-                        <div>
-                            <span class="contact-info-cat">Name:</span>
-                            <span class="brackets">{</span>
+            </section>
+
+            <section id="projects" class="section-projects">
+                <h2 class="section-title">Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <video class="project-video" width="100%" controls preload="metadata">
+                            <source src="./videos/ArchS-recording.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="project-info">
+                            <a class="project-name" href="https://github.com/angiegranda/ArchSys" target="_blank" rel="noopener">Semi-Automatic Archivation System</a>
+                            <div class="project-tech-list">
+                                <img class="tech-item" src="images/logos/csharp-svgrepo-com.svg" alt="C#">
+                                <img class="tech-item" src="images/logos/html-5-svgrepo-com.svg" alt="HTML">
+                                <img class="tech-item" src="images/logos/css-svgrepo-com.svg" alt="CSS">
+                                <img class="tech-item" src="images/logos/blazor-svgrepo-com.svg" alt="Blazor">
+                            </div>
                         </div>
-                        <input class="contact-name-input" type="text" name="name" required>
-                        <span class="brackets project-info-brackets">}</span>
-                    </div>
-                </label>
-                <label class="contact-property-container">
-                    <div class="contact-property">
-                        <div>
-                            <span class="contact-info-cat">Email:</span>
-                            <span class="brackets">{</span>
+                    </article>
+
+                    <article class="project-card">
+                        <video class="project-video" width="100%" controls preload="metadata">
+                            <source src="./videos/TUI-DirectoryJumperVideo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="project-info">
+                            <a class="project-name" href="https://github.com/angiegranda/TUI_Directory_Jumper-/tree/master/project" target="_blank" rel="noopener">Terminal Tool to Change Directory</a>
+                            <div class="project-tech-list">
+                                <img class="tech-item" src="images/logos/cpp-svgrepo-com.svg" alt="C++">
+                            </div>
                         </div>
-                        <input class="contact-email-input" type="email" name="email" required>
-                        <span class="brackets project-info-brackets">}</span>
-                    </div>
-                </label>
-                <label class="contact-property-container">
-                    <div class="contact-property">
-                        <div>
-                            <span class="contact-info-cat">Message:</span>
-                            <span class="brackets">{</span>
-                        </div>
-                        <textarea class="contact-message-input"  type="message" required></textarea>
-                        <span class="brackets">}</span>
-                    </div>
-                </label>
-                <div class="contact-button-container">
-                    <button class="contact-button" type="submit">Send</button>
+                    </article>
                 </div>
-            </form>
-            <div class="contact-icons">
-                <a class="icon-container" href="link-here" target="_blank">
-                    <img class="linkedin-logo" src="./images/logos/linkedin-svgrepo-com.svg">
-                </a>
-                <a class="icon-container" href="link-here" target="_blank">
-                    <img class="github-logo" src="./images/logos/github-svgrepo-com.svg">
-                </a>
-            </div>
-        </section>
+            </section>
+
+            <section id="thesis" class="section-thesis">
+                <h2 class="section-title">Thesis</h2>
+                <article class="thesis-card">
+                    <span class="thesis-tag">🎓 Thesis Project</span>
+                    <!-- EDIT: replace with your real thesis title -->
+                    <h3 class="thesis-title">Your Thesis Title Goes Here</h3>
+                    <!-- EDIT: replace with a 2-3 sentence summary of your thesis -->
+                    <p class="thesis-description">Add a short, compelling summary of your thesis here: the problem you tackled, your approach, and the outcome or impact of the work.</p>
+
+                    <div class="thesis-media">
+                        <!-- EDIT: once you send over the video file, it will be embedded here exactly like the project videos above -->
+                        <div class="video-placeholder">
+                            <span class="video-placeholder-icon">▶</span>
+                            <p>Thesis video coming soon</p>
+                        </div>
+                    </div>
+
+                    <div class="thesis-tech-list">
+                        <!-- EDIT: add tech icons/badges relevant to your thesis, e.g. -->
+                        <span class="thesis-tech-badge">Add tech stack</span>
+                    </div>
+
+                    <div class="thesis-links">
+                        <!-- EDIT: point these at your thesis repository / PDF report -->
+                        <a class="thesis-link" href="#">Repository</a>
+                        <a class="thesis-link" href="#">Full Report</a>
+                    </div>
+                </article>
+            </section>
+
+            <section id="contact" class="contact-section">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-wrapper">
+                    <form class="contact-me-box" action="mailto:angiegranda00@gmail.com" method="post" enctype="text/plain">
+                        <label class="contact-field">
+                            <span class="contact-info-cat">Name</span>
+                            <input class="contact-input" type="text" name="name" required>
+                        </label>
+                        <label class="contact-field">
+                            <span class="contact-info-cat">Email</span>
+                            <input class="contact-input" type="email" name="email" required>
+                        </label>
+                        <label class="contact-field">
+                            <span class="contact-info-cat">Message</span>
+                            <textarea class="contact-input contact-message-input" name="message" required></textarea>
+                        </label>
+                        <div class="contact-button-container">
+                            <button class="contact-button" type="submit">Send</button>
+                        </div>
+                    </form>
+                    <div class="contact-icons">
+                        <!-- EDIT: replace with your LinkedIn profile URL -->
+                        <a class="icon-container" href="#" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <img class="social-logo" src="./images/logos/linkedin-svgrepo-com.svg" alt="">
+                        </a>
+                        <a class="icon-container" href="https://github.com/angiegranda" target="_blank" rel="noopener" aria-label="GitHub">
+                            <img class="social-logo" src="./images/logos/github-svgrepo-com.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Angie Granda</p>
+        </footer>
     </body>
 </html>
